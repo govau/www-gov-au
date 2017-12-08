@@ -1,0 +1,8 @@
+---
+buildpack: staticfile_buildpack
+memory: 128MB
+instances: 2
+path: ./www
+applications:
+- name: gov-au-beta-static
+
