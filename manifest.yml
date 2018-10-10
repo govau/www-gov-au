@@ -1,6 +1,6 @@
 ---
 buildpack: nginx_buildpack
-memory: 128MB
+memory: 64MB
 instances: 2
 path: ./www
 applications:
