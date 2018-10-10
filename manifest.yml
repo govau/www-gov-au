@@ -1,5 +1,5 @@
 ---
-buildpack: staticfile_buildpack
+buildpack: nginx_buildpack
 memory: 128MB
 instances: 2
 path: ./www

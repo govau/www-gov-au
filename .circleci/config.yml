@@ -12,6 +12,7 @@ jobs:
       - run: cf install-plugin https://github.com/govau/autopilot/releases/download/0.0.5-venapp/autopilot-linux -f
       - run: cf login -a $CF_STAGING_API -u $CF_STAGING_USER -p $CF_STAGING_PASSWORD -o dta -s govau
       - run: cp nginx.conf ./www
+      - run: cp buildpack.yml ./www
       - run: cf zero-downtime-push gov-au-beta-static -f manifest.yml -p ./www
   deploy_prod:
     docker:
@@ -25,6 +26,7 @@ jobs:
       - run: cf install-plugin https://github.com/govau/autopilot/releases/download/0.0.5-venapp/autopilot-linux -f
       - run: cf login -a $CF_PROD_API -u $CF_PROD_USER -p $CF_PROD_PASSWORD -o dta -s govau
       - run: cp nginx.conf ./www
+      - run: cp buildpack.yml ./www
       - run: cf zero-downtime-push gov-au-beta-static -f manifest.yml -p ./www
 
 workflows:
