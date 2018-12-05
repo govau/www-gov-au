@@ -1,9 +1,7 @@
 ---
 applications:
 - name: gov-au-beta-static
-  buildpacks:
-  - nginx_buildpack
+  buildpack: nginx_buildpack
   memory: 64MB
   instances: 2
   path: ./www
-  applications:
