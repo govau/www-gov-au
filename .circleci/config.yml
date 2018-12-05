@@ -2,26 +2,18 @@ version: 2
 jobs:
   deploy_staging:
     docker:
-      - image: debian:stretch
-    working_directory: ~/repo
+      - image: govau/cf-cli
+    working_directory: /app
     steps:
       - checkout
-      - run: apt-get update && apt-get install -y curl
-      - run: curl -v -L -o cf-cli_amd64.deb 'https://cli.run.pivotal.io/stable?release=debian64&version=6.32.0&source=github-rel'
-      - run: dpkg -i cf-cli_amd64.deb
-      - run: cf install-plugin https://github.com/govau/autopilot/releases/download/0.0.5-venapp/autopilot-linux -f
       - run: cf login -a $CF_STAGING_API -u $CF_STAGING_USER -p $CF_STAGING_PASSWORD -o dta -s govau
       - run: cf zero-downtime-push gov-au-beta-static -f manifest.yml -p ./www
   deploy_prod:
     docker:
-      - image: debian:stretch
-    working_directory: ~/repo
+      - image: govau/cf-cli
+    working_directory: /app
     steps:
       - checkout
-      - run: apt-get update && apt-get install -y curl
-      - run: curl -v -L -o cf-cli_amd64.deb 'https://cli.run.pivotal.io/stable?release=debian64&version=6.32.0&source=github-rel'
-      - run: dpkg -i cf-cli_amd64.deb
-      - run: cf install-plugin https://github.com/govau/autopilot/releases/download/0.0.5-venapp/autopilot-linux -f
       - run: cf login -a $CF_PROD_API -u $CF_PROD_USER -p $CF_PROD_PASSWORD -o dta -s govau
       - run: cf zero-downtime-push gov-au-beta-static -f manifest.yml -p ./www
 
@@ -29,10 +21,10 @@ workflows:
   version: 2
   deploy:
     jobs:
-      - deploy_staging:
-          filters:
-            branches:
-              only: /^master$/
+      - deploy_staging
+          # filters:
+          #   branches:
+          #     only: /^master$/
       - deploy_prod:
           filters:
             branches:
