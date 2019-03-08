@@ -31,12 +31,11 @@
   <![endif]-->
 
   <link rel="shortcut icon" type="image/x-icon" href="favico.ico">
-  <script src="js/fonts-5cfe6bc8b908837bdc7fec9293f3218caf522af3f672710c8414a04d99165c0a.js" data-turbolinks-track="reload" async="async"></script>
-  <link rel="stylesheet" media="all" href="css/application-a3be3cb88462fa9da8f5070dff69d461af44aef9098279b1873e41c0b83fa786.css" data-turbolinks-track="reload">
-  <script src="js/application-a94daa5c647cc7d06c11b44b120c58ec28337733a939f1cd8d4fc7b8419d1ce9.js" data-turbolinks-track="reload" async="async"></script>
+  <link rel="stylesheet" media="all" href="css/furnace.min.css" data-turbolinks-track="reload">
+  <link rel="stylesheet" media="all" href="css/application-ds.css" data-turbolinks-track="reload">
 </head>
 
-<body data-ga-id="UA-81570106-1">
+<body data-ga-id="UA-81570106-1" class="au-grid">
 <noscript>
 <iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-NDZ4WX" style="display:none;visibility:hidden" width="0"></iframe>
 </noscript>
@@ -48,56 +47,48 @@
     })(window,document,'script','dataLayer','GTM-NDZ4WX');
 </script>
 
-<div class="skip-to">
-<a href="#content">
+<nav class="au-skip-link">
+<a href="#content" class="au-skip-link__link">
 Skip to main content
 </a>
-</div>
-<header role="banner">
+</nav>
+<header role="banner" class="au-grid au-header">
 
-<section>
-<!-- /.prerelease-govau--header.home -->
-<div class="wrapper">
-<div class="home-header-content">
-<div class="govau--logo home">
-<a href="">
-<img alt="GOV.AU crest logo" src="img/gov-au-white-2x-49a1845dae751560e8590a6cb8c073771a374f3dc9a35c1bd5f2028f08194446.png">
-</a>
-</div>
-<div class="homeintro">
-<h1 class="is-visuallyhidden">
-GOV.AU homepage
-</h1>
-<p>
-A listing of websites for governments in&nbsp;Australia
-</p>
-</div>
-<div class="feedback">
-<a class="button--feedback" role="button" href="mailto:info@dta.gov.au">Give feedback</a>
-</div>
+<section class="container">
 
-</div>
-</div>
-<div class="brandbar default">
-<div class="b1"></div>
-<div class="b2"></div>
+<div class="row">
+  <div class="col-md-12">
+    <div class="">
+      <a href="#" class="au-header__brand">
+        <img class="au-header__brand-image" alt="GOV.AU crest logo" src="img/gov-au-white-2x-49a1845dae751560e8590a6cb8c073771a374f3dc9a35c1bd5f2028f08194446.png">
+        <div class="au-header__text">
+          <div class="au-header__subline">A listing of websites for governments in Australia</div>
+        </div>
+      </a>
+    </div>
+  </div>
 </div>
 </section>
-
 </header>
-<div role="main">
 
-<main>
+<div class="brandbar default">
+  <div class="b1"></div>
+  <div class="b2"></div>
+</div>
 
-<article class="content-listing" id="content" tabindex="-1">
+
+<main role="main" class="au-body">
+
+<div class="container">
+
 <section class="government-links">
 <div class="federal-government">
-<h2 class="home-heading small">Australian Government</h2>
-<ul class="list-horizontal">
+<h2 class="au-display-lg">Australian Government</h2>
+<ul class="federal-government-list au-link-list">
 
 <li class="immigration">
 <article>
-<h3>
+<h3 class="au-display-sm">
 <a href="https://immi.homeaffairs.gov.au/">
 <span class="image"></span>
 Immigration and citizenship
@@ -109,19 +100,19 @@ Immigration and citizenship
 
 <li class="australia">
 <article>
-<h3>
+<h3 class="au-display-sm">
 <a href="/australia">
 <span class="image"></span>
 About Australia
 </a>
 </h3>
-<p>Public holidays, timezones, etc.</p>
+<p>Public holidays, timezones, daylight savings and school terms.</p>
 </article>
 </li>
 
 <li class="mygov">
 <article>
-<h3>
+<h3 class="au-display-sm">
 <a href="https://my.gov.au/">
 <span class="image"></span>
 my.gov.au
@@ -131,9 +122,9 @@ my.gov.au
 </article>
 </li>
 
-<li class="government">
+<li class="directory">
 <article>
-<h3>
+<h3 class="au-display-sm">
 <a href="https://directory.gov.au/">
 <span class="image"></span>
 directory.gov.au
@@ -145,7 +136,7 @@ directory.gov.au
 
 <li class="humanservices">
 <article>
-<h3>
+<h3 class="au-display-sm">
 <a href="https://www.humanservices.gov.au/">
 <span class="image"></span>
 humanservices.gov.au
@@ -157,7 +148,7 @@ humanservices.gov.au
 
 <li class="business">
 <article>
-<h3>
+<h3 class="au-display-sm">
 <a href="https://www.business.gov.au/">
 <span class="image"></span>
 business.gov.au
@@ -167,9 +158,9 @@ business.gov.au
 </article>
 </li>
 
-<li class="legal">
+<li class="legislation">
 <article>
-<h3>
+<h3 class="au-display-sm">
 <a href="https://www.legislation.gov.au/">
 <span class="image"></span>
 legislation.gov.au
@@ -182,11 +173,12 @@ legislation.gov.au
 </ul>
 </div>
 <div class="state-government">
-<h2 class="home-heading small">State and territory governments</h2>
-<ul class="list-vertical">
+<h2 class="au-display-lg">State and territory governments</h2>
+
+<ul class="state-government-list au-link-list">
 <li class="nsw">
 <article>
-<h3 class="state-title">New South Wales</h3>
+<h3 class="au-display-sm">New South Wales</h3>
 <a href="https://www.nsw.gov.au/">
 <span class="image"></span>
 nsw.gov.au
@@ -195,7 +187,7 @@ nsw.gov.au
 </li>
 <li class="vic">
 <article>
-<h3 class="state-title">Victoria</h3>
+<h3 class="au-display-sm">Victoria</h3>
 <a href="http://www.vic.gov.au/">
 <span class="image"></span>
 vic.gov.au
@@ -204,7 +196,7 @@ vic.gov.au
 </li>
 <li class="qld">
 <article>
-<h3 class="state-title">Queensland</h3>
+<h3 class="au-display-sm">Queensland</h3>
 <a href="http://www.qld.gov.au/">
 <span class="image"></span>
 qld.gov.au
@@ -213,7 +205,7 @@ qld.gov.au
 </li>
 <li class="sa">
 <article>
-<h3 class="state-title">South Australia</h3>
+<h3 class="au-display-sm">South Australia</h3>
 <a href="http://www.sa.gov.au/">
 <span class="image"></span>
 sa.gov.au
@@ -222,7 +214,7 @@ sa.gov.au
 </li>
 <li class="wa">
 <article>
-<h3 class="state-title">Western Australia</h3>
+<h3 class="au-display-sm">Western Australia</h3>
 <a href="https://www.wa.gov.au/">
 <span class="image"></span>
 wa.gov.au
@@ -231,7 +223,7 @@ wa.gov.au
 </li>
 <li class="tas">
 <article>
-<h3 class="state-title">Tasmania</h3>
+<h3 class="au-display-sm">Tasmania</h3>
 <a href="http://www.tas.gov.au/">
 <span class="image"></span>
 tas.gov.au
@@ -240,7 +232,7 @@ tas.gov.au
 </li>
 <li class="nt">
 <article>
-<h3 class="state-title">Northern Territory</h3>
+<h3 class="au-display-sm">Northern Territory</h3>
 <a href="https://nt.gov.au/">
 <span class="image"></span>
 nt.gov.au
@@ -249,7 +241,7 @@ nt.gov.au
 </li>
 <li class="act">
 <article>
-<h3 class="state-title">Australian Capital Territory</h3>
+<h3 class="au-display-sm">Australian Capital Territory</h3>
 <a href="http://www.act.gov.au/">
 <span class="image"></span>
 act.gov.au
@@ -258,9 +250,12 @@ act.gov.au
 </li>
 </ul>
 </div>
-</section>
-<section class="local-government">
-<h2 class="home-heading small">Local government</h2>
+
+
+
+
+<div class="local-government">
+<h2 class="au-display-lg">Local government</h2>
 <p>
 The 6 states and the Northern Territory have established 1 further
 level of government. Local governments (also known as city, shire, town or
@@ -300,32 +295,32 @@ local council sites:
 </li>
 </ul>
 </section>
-</article>
 
 
-</main>
 </div>
-<footer role="contentinfo">
-<div class="wrapper">
+</main>
+
+<footer role="contentinfo" class="au-footer au-body">
+<div class="container">
 <section>
-<div class="footer-logo">
+<div class="footer-logo col-xs-3">
 <img alt="Australian Government Coat of Arms" src="img/coat-of-arms-af51ab555b0040c7bcda43484858d96594d2cb60d71ff58ff91003a9cc7f3e81.png">
 </div>
-<div class="footer-links">
-<nav>
-<ul>
-<li><a href="copyright">Copyright</a></li>
-<li><a href="disclaimer">Disclaimer</a></li>
-<li><a href="privacy">Privacy</a></li>
-<li><a href="about">About</a></li>
-<li><a href="mailto:info@dta.gov.au">Feedback</a></li>
-</ul>
-</nav>
-<p>
-&copy; Commonwealth of Australia
-<br>
-<a href="http://creativecommons.org/licenses/by/3.0/au/">This work is licensed under a Creative Commons Attribution 3.0 International License</a>
-</p>
+<div class="footer-links col-xs-9">
+  <nav>
+    <ul class="au-link-list au-link-list--inline">
+      <li><a href="copyright">Copyright</a></li>
+      <li><a href="disclaimer">Disclaimer</a></li>
+      <li><a href="privacy">Privacy</a></li>
+      <li><a href="about">About</a></li>
+      <li><a href="mailto:info@dta.gov.au">Feedback</a></li>
+    </ul>
+  </nav>
+  <p>
+    &copy; Commonwealth of Australia
+    <br>
+    <a href="http://creativecommons.org/licenses/by/3.0/au/">This work is licensed under a Creative Commons Attribution 3.0 International License</a>
+  </p>
 </div>
 </section>
 </div>

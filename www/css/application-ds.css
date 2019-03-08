@@ -1,0 +1,157 @@
+html {
+  font-size: 17px;
+}
+body {
+  margin: 0;
+}
+.au-body {
+  font-family: "Open Sans", Verdana, "Bitstream Vera Sans", sans-serif;
+  font-weight: 400;
+}
+
+.au-body h1, 
+.au-body h2, 
+.au-body h3, 
+.au-body h4, 
+.au-body h5, 
+.au-body h6 
+{
+  font-family: "Open Sans", Verdana, "Bitstream Vera Sans", sans-serif;
+}
+.au-body h1,
+.au-body h2 {
+  font-weight: 400;
+}
+
+.au-body a {
+  color: rgb(49, 49, 49);
+  text-decoration: none;
+  border-bottom: 1px solid #5bcbe3;
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.1s;
+  transition-property: background-color, border-color, color;
+}
+.au-body a:hover, .au-body a:focus {
+  background-color: #5bcbe3;
+  color: rgb(49, 49, 49);
+}
+
+h2 {
+  border-bottom: 6px solid #5bcbe3;
+  padding-bottom: 0.4em;
+}
+
+.au-header__brand .au-header__brand-image {
+  max-width: 200px;
+}
+
+.brandbar {
+  background-color: #00a1bb;
+  height: 8px;
+  position: relative;
+}
+.brandbar .b1 {
+  position: absolute;
+  left: 25%;
+  top: 0;
+  bottom: 0;
+  width: 50%;
+  background-color: #b2e5ff;
+}
+.brandbar .b2 {
+  position: absolute;
+  left: 75%;
+  top: 0;
+  bottom: 0;
+  width: 25%;
+  background-color: #44c2ef;
+}
+
+main {
+  padding: 3rem 0;
+}
+
+.au-body .au-link-list {
+  margin-top: 1.6rem;
+  margin-bottom: 1.6rem;
+}
+
+.au-link-list > li {
+  margin: 0;
+  padding: 0.8em 0;
+}
+
+.au-link-list article {
+  position: relative;
+  padding-left: 80px;
+}
+.au-link-list article p {
+  margin-top: 0.4em;
+}
+
+.image {
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: block;
+  height: 60px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 60px;
+
+  border-radius: 5px;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+.immigration .image { background-image: url(../img/immigration.png); }
+.australia .image { background-image: url(../img/australia-color.png); }
+.mygov .image { background-image: url(../img/mygov.png); }
+.directory .image { background-image: url(../img/directory-color.png); }
+.humanservices .image { background-image: url(../img/humanservices-color.png); }
+.business .image { background-image: url(../img/business.png); }
+.legislation .image { background-image: url(../img/legislation.png); }
+
+.nsw .image { background-image: url(../img/nsw.png); }
+.vic .image { background-image: url(../img/vic.png); }
+.qld .image { background-image: url(../img/qld.png); }
+.sa .image  { background-image: url(../img/sa.png); }
+.wa .image  { background-image: url(../img/wa.png); }
+.tas .image { background-image: url(../img/tas.png); }
+.nt .image  { background-image: url(../img/nt.png); }
+.act .image { background-image: url(../img/act.png); }
+
+.government-links > div {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.federal-government-list {
+  column-count: 3;
+}
+.state-government-list {
+  column-count: 3;
+}
+.federal-government-list > li,
+.state-government-list > li {
+  -webkit-column-break-inside: avoid;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+footer.au-footer {
+  background-color: #f0f3f5;
+  border-top: 6px solid #043751;
+}
+
+.footer-logo img {
+  max-height: 7em;
+}
+
+footer.au-body .au-link-list {
+  margin-top: 0;
+}
+footer .au-link-list li {
+  padding-top: 0;
+  margin-right: 0.8em;
+}
